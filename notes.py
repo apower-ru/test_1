@@ -6,7 +6,7 @@ with open('D:\\notes.txt', 'r', encoding='cp1251') as inf:
         notes[i[0]] = i[1]
     my_input = input('Что надо найти или "enter" для записи: ').strip().lower()
     if my_input in notes.keys():
-        print('ОТВЕТ: ', notes[my_input])
+        print('ОТВЕТ:', notes[my_input])
     elif my_input == '':
         out = input('Название заметки: ').lower()
         if out in notes.keys():
